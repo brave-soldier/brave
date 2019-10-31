@@ -1,0 +1,50 @@
+/*AUTHOR: AKHIL RATNA CHETTRI*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <time.h>
+#include <pthread.h>
+
+int count(int file){
+    int input = open("C:/Users/Asus/Desktop/input_file.txt", O_RDONLY);
+    char toCount[1];
+    int freq = -1;
+    int r = read(input, toCount, 1);
+    if(r == -1)
+        printf("ERROR reading input file\n");
+    if(r == 0)
+        printf("Input file is empty\n");
+    
+    char buff[1];
+    r = read(file, buff, 1);
+    if(r != 0 && r != -1){
+        freq = 0;
+        if(buff[0] == toCount[0])
+            freq++;
+        while(r != 0){
+            r = read(file, buff, 1);
+            if(buff[0] == toCount[0])
+                freq++;
+        }
+    }
+    pthread_exit(freq);
+}
+int main(int argc, char** argv) {
+    int file_1 = open("C:/Users/Asus/Desktop/file_1.txt", O_RDONLY);
+    int file_2 = open("C:/Users/Asus/Desktop/file_2.txt", O_RDONLY);
+    int file_3 = open("C:/Users/Asus/Desktop/file_3.txt", O_RDONLY);
+    pthread_t thread1, thread2, thread3;
+    int *ans1, *ans2, *ans3;
+    int retcode1 = pthread_create(&thread1, NULL, count, file_1);
+    int retcode2 = pthread_create(&thread2, NULL, count, file_2);
+    int retcode3 = pthread_create(&thread3, NULL, count, file_3);
+    pthread_join(thread1,&ans1);
+    pthread_join(thread2,&ans2);
+    pthread_join(thread3,&ans3);
+    printf("Count: %d\n",ans1);
+    printf("Count: %d\n",ans2);
+    printf("Count: %d\n",ans3);
+    return (EXIT_SUCCESS);
+}
+

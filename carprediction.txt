@@ -1,0 +1,104 @@
+plt.rcParams['figure.figsize']=(20,10)
+Use dpiThe main objective of the given problem was to find what factors effect the price of the car.
+
+After performing analysis on the given dataset, we found out that out of 26 given variables only 17 variables effect the price of cars, they are:
+#### 1. Fuel type
+
+
+- Fuel type effects the price of the car, we found out that for diesel cars the price is higher than gas cars buts gas cars are more in number than diesel cars. This may be because of pollution norms in US.
+
+
+#### 2. Aspiration
+
+
+- We found out that std aspiration cars are high in number when compared to turbo aspiration. The Price of cars with turbo aspiration is higher than that with std aspiration.
+
+
+#### 3. Car body
+
+
+- There are 5 types of car body out of which sedan and hatchback are the mostly used carbodies. The most priced car body is hardtop followed by convertible. sedans also have high prices but when looked at the average price of sedan, it falls short of average price for a hard top.
+
+
+#### 4. Drive wheel
+
+
+- There are 3 types of drive wheel out of which rwd and fwd are the most used and the price of cars containing rwd is high when compared to cars having other 2 drive wheels.
+
+
+#### 5. Engine location
+
+
+- Engine is located either in the front or rear. Only 3 instances of engine being in the rear are found in the dataset but the prices for the same are higher than average price of front engine cars thus leading to the conclusion that it is an important factor in pricing of the car.
+
+
+#### 6. Car length
+
+
+- Car length is an important factor in pricing of the car as we have seen that the price of the car increases with the increase in car length. 
+
+
+#### 7. Car width
+
+
+- Car width is an important factor in pricing of the car as we have seen that the price of the car increases with the increase in car width. 
+
+
+#### 8. Curb weight
+
+
+- Curb weight also positive correlation with price. Most of the cars have around 2250 curbweight.
+
+
+#### 9. Engine type
+
+
+- dohcv engine has the highest price followed by dohc engine. There are mainly 7 types of engine types in cars in the given dataset and the difference between cars with each of engine is very high.
+
+
+#### 10. Cylinder number
+
+
+- Most of the cars have 4 cylinders. But the prize of 8 cylinder and 6 cylinder cars is high.
+
+
+#### 11. Engine size
+
+
+- Most of the cars have engine size of 100 and the price of the car has a positive correlation with engine size.
+
+
+#### 12. Fuel system
+
+
+- There are mainly 8 types of fuel system in which mfi and idi are high priced. More number of mfi cars are found in US.
+
+
+#### 13. Bore ratio
+
+
+- The bore ratio between 3.2 and 3.6 is commonly found in cars. The price increases with increase in bore ratio.
+
+
+#### 14. Horsepower
+
+- Horsepower is an important factor for the price of the car. Though most of the cars have 50 to 100 horsepower, horsepower of nearly 300 can also be found. The higher the horsepower, the higher the price of the car.
+
+
+#### 15. Fuel economy
+
+
+- Fuel economy is found out by using both city and highway mileage. Fuel economy has negative correlation with price and also negative correlation with horsepower. Since horsepower is measure of energy and fuel is the source of energy in cars, the higher the horsepower, the faster fuel runs out.
+
+
+#### 16. Company name
+
+
+- Company name or brand name plays an important part in price of the car. The brand which is well established and produces luxury cars have higher average car price. Toyota produces the most cars and jaguar has the highest average price per car.
+
+
+#### 17. Wheelbase
+
+
+- Most cars have wheelbase of 95 to 98 units and the wheelbase has positive correlation with price of the car.
+

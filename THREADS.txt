@@ -16,7 +16,7 @@ int count(int file){
     if(r == 0)
         printf("Input file is empty\n");
     
-    char buff[1];
+    char buff[1]
     r = read(file, buff, 1);
     if(r != 0 && r != -1){
         freq = 0;

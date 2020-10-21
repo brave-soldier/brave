@@ -50,7 +50,7 @@ After performing analysis on the given dataset, we found out that out of 26 give
 - Curb weight also positive correlation with price. Most of the cars have around 2250 curbweight.
 
 
-#### 9. Engine type
+#### 9. Engine type(tells us the engine type of car)
 
 
 - dohcv engine has the highest price followed by dohc engine. There are mainly 7 types of engine types in cars in the given dataset and the difference between cars with each of engine is very high.
